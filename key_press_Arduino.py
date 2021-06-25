@@ -69,9 +69,11 @@ if len(arduino_ports) > 1:
 
 ser = serial.Serial(arduino_ports[0], baudRate)
 
-
+"""
+The following line can be used to set port manualy in case of issues.
+"""
 #ser = serial.Serial(serPort, baudRate)
-#print ("Serial port " + serPort + " opened  Baudrate " + str(baudRate))
+
 startMarker = 60
 endMarker = 62
 waitForArduino()
