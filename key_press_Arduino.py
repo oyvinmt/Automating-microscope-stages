@@ -94,51 +94,51 @@ while True :
     for event in events:
         if event.type == pygame.KEYDOWN:
             
-            if keys[pygame.K_RIGHT]:
-                if keys[pygame.K_UP]:
+            if keys[pygame.K_KP6]:
+                if keys[pygame.K_KP8]:
                     sendToArduino("e")
-                elif keys[pygame.K_DOWN]:
+                elif keys[pygame.K_KP2]:
                     sendToArduino("z")
                 else:
                     sendToArduino("d")
-            if keys[pygame.K_LEFT]:
-                if keys[pygame.K_UP]:
+            if keys[pygame.K_KP4]:
+                if keys[pygame.K_KP8]:
                     sendToArduino('q')
-                elif keys[pygame.K_DOWN]:
+                elif keys[pygame.K_KP2]:
                     sendToArduino('z')
                 else:
                     sendToArduino('a')
-            if keys[pygame.K_UP]:
-                if keys[pygame.K_RIGHT]:
+            if keys[pygame.K_KP8]:
+                if keys[pygame.K_KP6]:
                     sendToArduino('e')
-                elif keys[pygame.K_LEFT]:
+                elif keys[pygame.K_KP4]:
                     sendToArduino('q')
                 else:
                     sendToArduino('w')
-            if keys[pygame.K_DOWN]:
-                if keys[pygame.K_LEFT]:
+            if keys[pygame.K_KP2]:
+                if keys[pygame.K_KP4]:
                     sendToArduino('z')
-                elif keys[pygame.K_RIGHT]:
+                elif keys[pygame.K_KP6]:
                     sendToArduino('c')
                 else:
                     sendToArduino('s')
                     
-            elif keys[pygame.K_PLUS]:
+            elif keys[pygame.K_KP_PLUS]:
                 sendToArduino('r')
-            elif keys[pygame.K_MINUS]:
+            elif keys[pygame.K_KP_MINUS]:
                 sendToArduino('f')
 
-            elif keys[pygame.K_o]:
+            elif keys[pygame.K_KP3]:
                 sendToArduino('o')
-            elif keys[pygame.K_l]:
+            elif keys[pygame.K_KP9]:
                 sendToArduino('l')
                 
-            elif keys[pygame.K_1]:
-                sendToArduino('1')
-            elif keys[pygame.K_2]:
-                sendToArduino('2')
-            elif keys[pygame.K_3]:
+            elif keys[pygame.K_KP0]:
                 sendToArduino('3')
+            elif keys[pygame.K_KP1]:
+                sendToArduino('1')
+            elif keys[pygame.K_KP7]:
+                sendToArduino('2')
         if event.type == pygame.KEYUP:
             sendToArduino(' ')
             
